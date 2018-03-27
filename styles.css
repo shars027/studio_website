@@ -12,11 +12,40 @@
 	width: 100%
 	height: 100%;
 	list-style-type: none; 
-}
-
-body {
 	font-family: 'din_condensedbold', sans-serif;
 	text-transform: uppercase;
+}
+
+button#button {
+		position: fixed;
+		top: 8.33333%;
+
+
+	    background-color: black;
+	    border: none;
+	    color: white;
+	    padding: 8px;
+	    text-align: center;
+	    text-decoration: none;
+
+	    left: 4.16667%;
+	    height: 60pt;
+	    font-size: 60pt;
+
+	    line-height: 91%;
+	    cursor: pointer;
+
+	    z-index: 100;
+	}
+
+div#white {
+	position: fixed;
+	background: white;
+	height: 100%;
+	width: 100%;
+	opacity: .5;
+
+	z-index: 50;
 }
 
 /*   MENU   */
@@ -26,26 +55,10 @@ div#menu {
 	height: 100%;
 
 	position: fixed;
-	top: 8.33333%;
+	top: 16.66667%;
 
-	z-index: 3;
+	z-index: 75;
 }
-
-	div#menu_button {
-		position: relative;
-		left: 4.16667%;
-		display: inline-block;
-		
-		height: 60pt;
-		font-size: 60pt;
-
-		background: black;
-		color: white;
-
-		line-height: 110%;
-		padding-right:8px;
-		padding-left:8px;
-	}
 
 	ul#menu {
 		position: relative;
@@ -134,49 +147,54 @@ div#menu {
 /*   END OF MENU   */
 
 div#content {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	top: 0px;
-	z-index: 1;
+
+	z-index: 25;
 }
 
-a {
-	text-decoration: none;
-	color: #999999;
-}
-
-a:hover {
-	color: black;
-}
-
-img {
-	display: block;
-	width: 31.249995%;
-	padding-top: 12.5pt;
-}
-
-	img.one, iframe.one {
-		position: relative;
-		left: 2.083335%;
-	}
-	img.five, iframe.five {
-		position: relative;
-		left: 18.2291662%;
-	}
-	img.three, iframe.three {
-		position: relative;
-		left: 34.3749975%;
-	}
-	img.two, iframe.two {
-		position: relative;
-		left: 50.5208338%;
-	}
-	img.four, iframe.four {
-		position: relative;
-		left: 66.66667%;
+	a {
+		text-decoration: none;
+		color: black;
 	}
 
-iframe {
-	display: block;
-}
+	a:hover {
+		color: transparent;
+		-webkit-text-stroke-width: .02em;
+   		-webkit-text-stroke-color: black;
+	}
+
+	img {
+		display: block;
+		width: 31.249995%;
+		padding-top: 12.5pt;
+	}
+
+		img.one, iframe.one {
+			position: relative;
+			left: 2.083335%;
+		}
+		img.five, iframe.five {
+			position: relative;
+			left: 18.2291662%;
+		}
+		img.three, iframe.three {
+			position: relative;
+			left: 34.3749975%;
+		}
+		img.two, iframe.two {
+			position: relative;
+			left: 50.5208338%;
+		}
+		img.four, iframe.four {
+			position: relative;
+			left: 66.66667%;
+		}
+
+	iframe {
+		display: block;
+	}
+
+
