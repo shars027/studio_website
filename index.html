@@ -3,6 +3,8 @@
 	<head>
 		<title>Studio Website</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="myscript.js"></script>
 	</head>
 	<body>
 <!-- BEGINNING OF MENU -->
@@ -10,7 +12,7 @@
 		<div id="white"></div>
 		<div id="menu">
 				<ul id="menu">
-					<li id="da_drop"><a href="#design_art">Design / Art</a>
+					<li id="da_drop"><a id="da_top_nav" href="#design_art">Design / Art</a>
 						<ul>
 							<div class="da_drop_content">
 									<li id="cc"><a href="#chuck_close">Chuck Close</a></li>
@@ -25,9 +27,9 @@
 							</div>
 						</ul>
 					</li>
-					<li id="f_drop"><a href="#fashion">Fashion</a>
+					<li id="f_drop"><a id="f_top_nav" href="#fashion">Fashion</a>
 						<ul>
-							<div class="f_drop_content">	
+							<div class="f_drop_content">
 								<li id="bal"><a href="#balmain">Balmain</a></li>
 								<li id="dol"><a href="#dolce">Dolce & Gobbana</a></li>
 								<li id="giv"><a href="#givenchy">Givenchy</a></li>
@@ -40,7 +42,7 @@
 					</li>
 					<li id="film_drop"><a href="#film">Film</a>
 					</li>
-					<li id="m_drop"><a href="#music">Music</a>
+					<li id="m_drop"><a id="m_top_nav" href="#music">Music</a>
 						<ul>
 							<div class="m_drop_content">
 								<li id="al"><a href="#albums">Albums</a></li>
@@ -48,7 +50,7 @@
 								<li id="co"><a href="#composers">Composers</a></li>
 								<li id="so"><a href="#songs">Songs</a></li>
 								<li id="vi"><a href="#videos">Videos</a></li>
-							</div>						
+							</div>
 						</ul>
 					</li>
 					<li id="tv_drop"><a href="#tv">TV</a>
@@ -156,7 +158,7 @@
 					<img src="design_art/terry_richardson/t18.jpg" class="three">
 				</div>
 			</div>
-	<!-- END OF DESIGN -->		
+	<!-- END OF DESIGN -->
 	<!-- FASHION -->
 			<div id="fashion">
 				<div id="balmain">
@@ -242,7 +244,7 @@
 					<img src="fashion/versace/v10.png" class="five">
 				</div>
 			</div>
-	<!-- END OF FASHION -->		
+	<!-- END OF FASHION -->
 	<!-- FILM -->
 			<div id="film">
 				<img src="film/film1.jpg" class="one">
@@ -329,54 +331,31 @@
 					</ul>
 				</div>
 				<div id="videos">
-					<div class="youtubes">	
-						<!-- Praying - Kesha -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/v-Dur3uXXCQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="one"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- Good Ol Days - Macklemore & Kesha -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/1yYV9-KoSUM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="two"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- Love - Lana Del Rey -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/3-NTv0CdFCk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="three"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- We Can't Stop - Miley Cyrus -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/LrUvu1mlWco?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="four"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- F**kin Perfect - P!nk -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ocDlOD1Hw9k?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="five"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- True Love - P!nk -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/zsmUOdmm02A?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="one"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- Out of the Woods - Taylor Swift -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/JLf9q36UsBk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="two"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- Girlfriend - Avril Lavigne -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Bg59q4puhmg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="three"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- Heart Attack Demi Lovato -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/AByfaYcOm4A?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="four"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- You Belong with Me - Taylor Swift -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/VuNIsY6JdUw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="five"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- Learn to Let Go - Kesha -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Xx1RSj4biO4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="one"></iframe>
-					</div>
-					<div class="youtubes">	
-						<!-- Maybe You're Right - Bangerz Tour -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/XicPhvJFh8Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="two"></iframe>
-					</div>
+					<!-- Praying - Kesha -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/v-Dur3uXXCQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="one"></iframe>
+					<!-- Good Ol Days - Macklemore & Kesha -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/1yYV9-KoSUM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="two"></iframe>
+					<!-- Love - Lana Del Rey -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/3-NTv0CdFCk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="three"></iframe>
+					<!-- We Can't Stop - Miley Cyrus -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/LrUvu1mlWco?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="four"></iframe>
+					<!-- F**kin Perfect - P!nk -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/ocDlOD1Hw9k?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="five"></iframe>
+					<!-- True Love - P!nk -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zsmUOdmm02A?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="one"></iframe>
+					<!-- Out of the Woods - Taylor Swift -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/JLf9q36UsBk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="two"></iframe>
+					<!-- Girlfriend - Avril Lavigne -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Bg59q4puhmg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="three"></iframe>
+					<!-- Heart Attack Demi Lovato -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/AByfaYcOm4A?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="four"></iframe>
+					<!-- You Belong with Me - Taylor Swift -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/VuNIsY6JdUw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="five"></iframe>
+					<!-- Learn to Let Go - Kesha -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Xx1RSj4biO4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="one"></iframe>
+					<!-- Maybe You're Right - Bangerz Tour -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/XicPhvJFh8Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="two"></iframe>
+					<!-- TV -->
 				</div>
 			</div>
 	<!-- END OF MUSIC -->
